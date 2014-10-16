@@ -18,11 +18,17 @@ from Tkinter import *
 root = Tk()
 drawpad = Canvas(root, width=500,height=500, background='white')
 drawpad.grid(row=0, column=1)
+#Square house foundation
 square = drawpad.create_rectangle(100,300,300,500, fill='black')
+#roof
 line = drawpad.create_line(100, 300, 200, 200)
 line = drawpad.create_line(200, 200, 300, 300)
+#both windows
 square = drawpad.create_rectangle(120,320,180,380, fill='white')
 square = drawpad.create_rectangle(220,320,280,380, fill='white')
+#door
+square = drawpad.create_rectangle(170,420,230,500, fill='white')
+#doorhandle
 # Create the canvas widget
 # create_oval(x,y,width,height,fill color)
 #oval = drawpad.create_oval(10, 50, 100, 100, fill='green')
