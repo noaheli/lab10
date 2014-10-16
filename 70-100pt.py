@@ -19,7 +19,7 @@ root = Tk()
 drawpad = Canvas(root, width=500,height=500, background='white')
 drawpad.grid(row=0, column=1)
 #Square house foundation
-square = drawpad.create_rectangle(100,300,300,500, fill='black')
+square = drawpad.create_rectangle(100,300,300,500, fill='red')
 #roof
 line = drawpad.create_line(100, 300, 200, 200)
 line = drawpad.create_line(200, 200, 300, 300)
@@ -29,10 +29,9 @@ square = drawpad.create_rectangle(220,320,280,380, fill='white')
 #door
 square = drawpad.create_rectangle(170,420,230,500, fill='white')
 #doorhandle
-# Create the canvas widget
-# create_oval(x,y,width,height,fill color)
-#oval = drawpad.create_oval(10, 50, 100, 100, fill='green')
-#create_square(top left x,top left y, bottom right x, bottom right y, fill color)
-#create_line(top left x,top left y, bottom right x, bottom right y, fill color)
-#line = drawpad.create_line(0, 0, 200, 100)
+oval = drawpad.create_oval(225, 450, 210, 465, fill='black')
+#grass
+square = drawpad.create_rectangle(0,500,500,497, fill='green')
+#chimney
+square = drawpad.create_rectangle(120,240,160,300, fill='red')
 root.mainloop()
